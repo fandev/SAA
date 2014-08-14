@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0964E328-5639-46B4-BF0E-88A58C88DDE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAA.Model</RootNamespace>
+    <AssemblyName>SAA.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\Acao.cs" />
+    <Compile Include="Models\Aplicacao.cs" />
+    <Compile Include="Models\AplicacaoUrl.cs" />
+    <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\FuncionarioPerfil.cs" />
+    <Compile Include="Models\FuncionarioPerfilPermissao.cs" />
+    <Compile Include="Models\HitoricoFuncionarioPerfilPermissao.cs" />
+    <Compile Include="Models\KERBEROSContext.cs" />
+    <Compile Include="Models\Mapping\AcaoMap.cs" />
+    <Compile Include="Models\Mapping\AplicacaoMap.cs" />
+    <Compile Include="Models\Mapping\AplicacaoUrlMap.cs" />
+    <Compile Include="Models\Mapping\FuncionarioMap.cs" />
+    <Compile Include="Models\Mapping\FuncionarioPerfilMap.cs" />
+    <Compile Include="Models\Mapping\FuncionarioPerfilPermissaoMap.cs" />
+    <Compile Include="Models\Mapping\HitoricoFuncionarioPerfilPermissaoMap.cs" />
+    <Compile Include="Models\Mapping\PerfilAplicacaoMap.cs" />
+    <Compile Include="Models\Mapping\StatusFuncionarioMap.cs" />
+    <Compile Include="Models\Mapping\StatusUsuarioMap.cs" />
+    <Compile Include="Models\Mapping\sysdiagramMap.cs" />
+    <Compile Include="Models\Mapping\TipoAplicacaoMap.cs" />
+    <Compile Include="Models\Mapping\TokenMap.cs" />
+    <Compile Include="Models\Mapping\TransacaoMap.cs" />
+    <Compile Include="Models\Mapping\UserTokenAppTokenMap.cs" />
+    <Compile Include="Models\Mapping\UsuarioAplicacaoMap.cs" />
+    <Compile Include="Models\Mapping\UsuarioMap.cs" />
+    <Compile Include="Models\PerfilAplicacao.cs" />
+    <Compile Include="Models\StatusFuncionario.cs" />
+    <Compile Include="Models\StatusUsuario.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\TipoAplicacao.cs" />
+    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\Transacao.cs" />
+    <Compile Include="Models\UserTokenAppToken.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\UsuarioAplicacao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Acao.cs" />
+    <Compile Include="ViewModel\AppUserToken.cs" />
+    <Compile Include="ViewModel\Result.cs" />
+    <Compile Include="ViewModel\Token.cs" />
+    <Compile Include="ViewModel\UrlRedirect.cs" />
+    <Compile Include="ViewModel\UserInfo.cs" />
+    <Compile Include="ViewModel\Usuario.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SAA.Infra\SAA.Infra.csproj">
+      <Project>{e29c1074-cb4c-4259-9108-87a065cb2c4b}</Project>
+      <Name>SAA.Infra</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

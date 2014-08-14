@@ -1,0 +1,16 @@
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\SAA.Infra.dll.config
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\SAA.Infra.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\SAA.Infra.pdb
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\EntityFramework.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\EntityFramework.SqlServer.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\Newtonsoft.Json.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\System.Net.Http.Formatting.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\System.Web.Http.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\EntityFramework.xml
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\EntityFramework.SqlServer.xml
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\Newtonsoft.Json.xml
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\System.Net.Http.Formatting.xml
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\bin\Debug\System.Web.Http.xml
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\obj\Debug\SAA.Infra.csprojResolveAssemblyReference.cache
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\obj\Debug\SAA.Infra.dll
+D:\SNB\Projetos\Kerberos\SAA\SAA.Infra\obj\Debug\SAA.Infra.pdb
